@@ -9,11 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patito.Presentation", "Src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patito.Application.Services", "Src\Patito.Application.Services\Patito.Application.Services.csproj", "{3215C274-A228-4B4B-B909-714BB2DBD477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patito.Repository", "Src\Patito.Repository\Patito.Repository.csproj", "{094A14D8-C804-45F0-B485-0B375BF2271E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patito.Domain", "Src\Patito.Domain\Patito.Domain.csproj", "{456AE16B-0D71-4E67-9E62-F8F1D2D65FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patito.Infraestructure", "Src\Patito.Infraestructure\Patito.Infraestructure.csproj", "{92A2E417-0042-46A0-B8E5-A87A6092A0D8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{6DDEDE00-1305-11ED-9E30-19474F8CDBC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patito.Infraestructure.Database", "Src\Infraestructure\Patito.Infraestructure.Database\Patito.Infraestructure.Database.csproj", "{92A2E417-0042-46A0-B8E5-A87A6092A0D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patito.Infraestructure.Plagiary", "Src\Infraestructure\Patito.Infraestructure.Plagiary\Patito.Infraestructure.Plagiary.csproj", "{B860954D-0C61-4CB6-9791-DFB636A7A5D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,10 +34,6 @@ Global
 		{3215C274-A228-4B4B-B909-714BB2DBD477}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3215C274-A228-4B4B-B909-714BB2DBD477}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3215C274-A228-4B4B-B909-714BB2DBD477}.Release|Any CPU.Build.0 = Release|Any CPU
-		{094A14D8-C804-45F0-B485-0B375BF2271E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{094A14D8-C804-45F0-B485-0B375BF2271E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{094A14D8-C804-45F0-B485-0B375BF2271E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{094A14D8-C804-45F0-B485-0B375BF2271E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{456AE16B-0D71-4E67-9E62-F8F1D2D65FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{456AE16B-0D71-4E67-9E62-F8F1D2D65FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{456AE16B-0D71-4E67-9E62-F8F1D2D65FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -44,12 +42,17 @@ Global
 		{92A2E417-0042-46A0-B8E5-A87A6092A0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92A2E417-0042-46A0-B8E5-A87A6092A0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92A2E417-0042-46A0-B8E5-A87A6092A0D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B860954D-0C61-4CB6-9791-DFB636A7A5D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B860954D-0C61-4CB6-9791-DFB636A7A5D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B860954D-0C61-4CB6-9791-DFB636A7A5D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B860954D-0C61-4CB6-9791-DFB636A7A5D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{094A14D8-C804-45F0-B485-0B375BF2271E} = {15877B64-02F3-4017-9BF3-4B822622EEBA}
-		{92A2E417-0042-46A0-B8E5-A87A6092A0D8} = {15877B64-02F3-4017-9BF3-4B822622EEBA}
+		{6DDEDE00-1305-11ED-9E30-19474F8CDBC7} = {15877B64-02F3-4017-9BF3-4B822622EEBA}
+		{92A2E417-0042-46A0-B8E5-A87A6092A0D8} = {6DDEDE00-1305-11ED-9E30-19474F8CDBC7}
 		{456AE16B-0D71-4E67-9E62-F8F1D2D65FDC} = {15877B64-02F3-4017-9BF3-4B822622EEBA}
 		{3215C274-A228-4B4B-B909-714BB2DBD477} = {15877B64-02F3-4017-9BF3-4B822622EEBA}
 		{24B63F21-E6F3-47C1-8D8F-FE8FEB8692C9} = {15877B64-02F3-4017-9BF3-4B822622EEBA}
+		{B860954D-0C61-4CB6-9791-DFB636A7A5D1} = {6DDEDE00-1305-11ED-9E30-19474F8CDBC7}
 	EndGlobalSection
 EndGlobal

@@ -8,6 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Patito.Application.Services\Patito.Application.Services.csproj" />
+    <ProjectReference Include="..\Patito.Repository\Patito.Repository.csproj" />
+    <ProjectReference Include="..\Patito.Domain\Patito.Domain.csproj" />
+    <ProjectReference Include="..\Infraestructure\Patito.Infraestructure.Database\Patito.Infraestructure.Database.csproj" />
   </ItemGroup>
 
 </Project>
